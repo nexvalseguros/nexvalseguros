@@ -19,7 +19,7 @@ const buttonVariants = cva(
         neon: "bg-primary text-primary-foreground font-semibold glow-neon hover:glow-neon-intense hover:scale-105",
         "neon-outline": "border border-primary bg-transparent text-primary hover:bg-primary/10 glow-neon",
         "hero-primary": "bg-primary text-primary-foreground font-semibold glow-neon hover:glow-neon-intense hover:scale-105 font-orbitron tracking-wide",
-        "hero-outline": "border border-foreground/30 bg-transparent text-foreground hover:border-foreground hover:bg-foreground/5 font-orbitron tracking-wide",
+        "hero-outline": "border border-foreground/30 bg-transparent text-foreground hover:border-primary hover:text-primary hover:bg-primary/5 font-orbitron tracking-wide",
       },
       size: {
         default: "h-10 px-4 py-2",

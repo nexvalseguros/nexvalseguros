@@ -26,11 +26,11 @@ const testimonials = [
 
 const Depoimentos = () => {
   return (
-    <section className="py-24 relative">
+    <section className="py-24 relative bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-orbitron text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="font-orbitron text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
             O que nossos clientes <span className="text-gradient-neon">dizem</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
@@ -43,7 +43,7 @@ const Depoimentos = () => {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-500"
+              className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-lg hover:shadow-primary/5"
             >
               {/* Quote Icon */}
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
@@ -57,7 +57,7 @@ const Depoimentos = () => {
 
               {/* Author */}
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
                   <User className="w-6 h-6 text-muted-foreground" />
                 </div>
                 <div>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoNexval from "@/assets/logo-nexval.png";
 
 const navItems = [
   { label: "Quem Somos", href: "#quem-somos" },
@@ -34,17 +35,19 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border/50"
-          : "bg-transparent"
+          ? "bg-background/95 backdrop-blur-md border-b border-border shadow-sm"
+          : "bg-background/80 backdrop-blur-sm"
       }`}
     >
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
-            <span className="font-orbitron text-2xl font-bold tracking-wider">
-              NEX<span className="text-primary glow-text">V</span>AL
-            </span>
+          <a href="#" className="flex items-center">
+            <img 
+              src={logoNexval} 
+              alt="Nexval Corretora de Seguros" 
+              className="h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Navigation */}
@@ -81,13 +84,13 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-20 left-0 right-0 bg-background/98 backdrop-blur-md border-b border-border">
+          <div className="lg:hidden absolute top-20 left-0 right-0 bg-background/98 backdrop-blur-md border-b border-border shadow-lg">
             <nav className="flex flex-col py-4">
               {navItems.map((item) => (
                 <button
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
-                  className="px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-secondary/50 transition-colors text-left"
+                  className="px-6 py-3 text-muted-foreground hover:text-foreground hover:bg-muted transition-colors text-left"
                 >
                   {item.label}
                 </button>

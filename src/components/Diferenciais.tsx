@@ -48,14 +48,14 @@ const differentials = [
 
 const Diferenciais = () => {
   return (
-    <section id="diferenciais" className="py-24 relative bg-gradient-to-b from-background via-card to-background">
+    <section id="diferenciais" className="py-24 relative bg-muted/30">
       {/* Top divider */}
-      <div className="absolute top-0 left-0 right-0 line-glow" />
+      <div className="absolute top-0 left-0 right-0 line-glow-dark" />
       
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-orbitron text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="font-orbitron text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
             Diferenciais <span className="text-gradient-neon">Nexval</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
@@ -68,16 +68,13 @@ const Diferenciais = () => {
           {differentials.map((item, index) => (
             <div
               key={index}
-              className="group relative p-6 rounded-2xl bg-card/50 backdrop-blur border border-border/50 hover:border-primary/30 transition-all duration-500"
+              className="group relative p-6 rounded-2xl bg-background border border-border hover:border-primary/30 transition-all duration-500 hover:shadow-lg hover:shadow-primary/5"
             >
-              {/* Glow effect on hover */}
-              <div className="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
               <div className="relative">
-                <div className="w-12 h-12 rounded-lg border border-primary/30 flex items-center justify-center mb-4 group-hover:border-primary/60 transition-colors">
+                <div className="w-12 h-12 rounded-lg border border-primary/30 flex items-center justify-center mb-4 group-hover:border-primary/60 group-hover:bg-primary/5 transition-all">
                   <item.icon className="w-6 h-6 text-primary" strokeWidth={1.5} />
                 </div>
-                <h3 className="font-orbitron text-base font-bold mb-2">
+                <h3 className="font-orbitron text-base font-bold mb-2 text-foreground">
                   {item.title}
                 </h3>
                 <p className="text-muted-foreground text-sm">

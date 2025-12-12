@@ -6,56 +6,60 @@
 
 @layer base {
   :root {
-    /* Nexval Brand Colors */
-    --background: 0 0% 5.5%;
-    --foreground: 0 0% 100%;
+    /* Light Theme - Nexval Brand Colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
 
-    --card: 0 0% 7.5%;
-    --card-foreground: 0 0% 100%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 9%;
 
-    --popover: 0 0% 7.5%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
 
     /* Neon Blue - Primary */
-    --primary: 200 100% 50%;
-    --primary-foreground: 0 0% 5.5%;
+    --primary: 187 100% 42%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
 
-    --muted: 0 0% 17%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 40%;
 
-    --accent: 200 100% 50%;
-    --accent-foreground: 0 0% 5.5%;
+    --accent: 187 100% 42%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 17%;
-    --ring: 200 100% 50%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 187 100% 42%;
 
     --radius: 0.75rem;
 
     /* Custom Nexval tokens */
-    --neon-blue: 200 100% 50%;
-    --neon-glow: 0 0 20px hsl(200 100% 50% / 0.5), 0 0 40px hsl(200 100% 50% / 0.3), 0 0 60px hsl(200 100% 50% / 0.1);
-    --neon-glow-intense: 0 0 30px hsl(200 100% 50% / 0.7), 0 0 60px hsl(200 100% 50% / 0.5), 0 0 90px hsl(200 100% 50% / 0.3);
+    --neon-blue: 187 100% 42%;
+    --neon-glow: 0 0 20px hsl(187 100% 42% / 0.4), 0 0 40px hsl(187 100% 42% / 0.2), 0 0 60px hsl(187 100% 42% / 0.1);
+    --neon-glow-intense: 0 0 30px hsl(187 100% 42% / 0.6), 0 0 60px hsl(187 100% 42% / 0.4), 0 0 90px hsl(187 100% 42% / 0.2);
     
-    --graphite: 0 0% 5.5%;
-    --graphite-light: 0 0% 12%;
-    --graphite-medium: 0 0% 17%;
+    --graphite: 0 0% 9%;
+    --graphite-light: 0 0% 15%;
+    --graphite-medium: 0 0% 20%;
+
+    /* Dark section backgrounds */
+    --section-dark: 0 0% 9%;
+    --section-dark-foreground: 0 0% 100%;
 
     /* Sidebar */
-    --sidebar-background: 0 0% 7.5%;
-    --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 200 100% 50%;
-    --sidebar-primary-foreground: 0 0% 5.5%;
-    --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 200 100% 50%;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 9%;
+    --sidebar-primary: 187 100% 42%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 94%;
+    --sidebar-accent-foreground: 0 0% 9%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 187 100% 42%;
   }
 }
 
@@ -79,7 +83,7 @@
 
 @layer utilities {
   .text-gradient-neon {
-    @apply bg-gradient-to-r from-[hsl(var(--neon-blue))] to-[hsl(210,100%,70%)] bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-[hsl(187,100%,42%)] to-[hsl(200,100%,50%)] bg-clip-text text-transparent;
   }
 
   .glow-neon {
@@ -100,7 +104,11 @@
   }
 
   .bg-gradient-radial {
-    background: radial-gradient(ellipse at center, hsl(var(--neon-blue) / 0.15) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center, hsl(var(--neon-blue) / 0.1) 0%, transparent 70%);
+  }
+
+  .bg-section-dark {
+    @apply bg-[hsl(var(--section-dark))] text-[hsl(var(--section-dark-foreground))];
   }
 
   .animate-glow-pulse {
@@ -132,5 +140,9 @@
   .line-glow {
     @apply h-px bg-gradient-to-r from-transparent via-[hsl(var(--neon-blue))] to-transparent;
     box-shadow: 0 0 10px hsl(var(--neon-blue) / 0.5);
+  }
+
+  .line-glow-dark {
+    @apply h-px bg-gradient-to-r from-transparent via-[hsl(var(--neon-blue)/0.5)] to-transparent;
   }
 }

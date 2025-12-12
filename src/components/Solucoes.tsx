@@ -48,14 +48,11 @@ const solutions = [
 
 const Solucoes = () => {
   return (
-    <section id="solucoes" className="py-24 relative">
-      {/* Top divider */}
-      <div className="absolute top-0 left-0 right-0 line-glow" />
-      
+    <section id="solucoes" className="py-24 relative bg-background">
       <div className="container mx-auto px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-orbitron text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+          <h2 className="font-orbitron text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-foreground">
             Soluções <span className="text-gradient-neon">Complementares</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
@@ -68,12 +65,12 @@ const Solucoes = () => {
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-500 hover:glow-neon hover:-translate-y-1"
+              className="group p-6 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1"
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 group-hover:glow-neon transition-all duration-300">
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-all duration-300">
                 <solution.icon className="w-7 h-7 text-primary" />
               </div>
-              <h3 className="font-orbitron text-lg font-bold mb-2 group-hover:text-primary transition-colors">
+              <h3 className="font-orbitron text-lg font-bold mb-2 text-foreground group-hover:text-primary transition-colors">
                 {solution.title}
               </h3>
               <p className="text-muted-foreground text-sm">

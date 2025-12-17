@@ -1,4 +1,4 @@
-import { User } from "lucide-react";
+import brunnoFerreira from "@/assets/brunno-ferreira.png";
 
 const Fundadores = () => {
   return (
@@ -16,16 +16,15 @@ const Fundadores = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {/* Photo Placeholder */}
+            {/* Photo */}
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-primary/10 rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
-              <div className="relative aspect-square rounded-2xl bg-card border border-primary/20 flex items-center justify-center overflow-hidden">
-                <div className="text-center p-8">
-                  <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <User className="w-12 h-12 text-primary/50" />
-                  </div>
-                  <p className="text-muted-foreground text-sm">Foto do fundador</p>
-                </div>
+              <div className="relative aspect-square rounded-2xl border border-primary/20 overflow-hidden">
+                <img 
+                  src={brunnoFerreira} 
+                  alt="Brunno Ferreira - Fundador da Nexval" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 

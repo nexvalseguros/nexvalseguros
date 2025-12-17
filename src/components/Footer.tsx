@@ -1,7 +1,7 @@
 import { Instagram, Linkedin, Facebook, MessageCircle } from "lucide-react";
 import logoNexval from "@/assets/logo-nexval.png";
 
-const WHATSAPP_NUMBER = "5511999999999"; // Replace with actual number
+const WHATSAPP_NUMBER = "5511940342141";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

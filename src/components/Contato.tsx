@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { MessageCircle, Send, Mail, MapPin } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
-const WHATSAPP_NUMBER = "5511999999999"; // Replace with actual number
+const WHATSAPP_NUMBER = "5511940342141";
 
 const Contato = () => {
   const { toast } = useToast();

@@ -82,7 +82,7 @@ const Footer = () => {
           <div>
             <h4 className="font-orbitron font-bold mb-4 text-white">Contato</h4>
             <ul className="space-y-3 text-white/70">
-              <li>(11) 99999-9999</li>
+              <li>(11) 94034-2141</li>
               <li>contato@nexval.com.br</li>
               <li>São Paulo, SP - Brasil</li>
             </ul>

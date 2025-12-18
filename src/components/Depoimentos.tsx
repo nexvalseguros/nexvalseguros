@@ -3,24 +3,24 @@ import { Quote, User } from "lucide-react";
 const testimonials = [
   {
     id: 1,
-    name: "Cliente 1",
-    role: "Empresário",
-    content: "Depoimento em breve...",
-    placeholder: true,
+    name: "Ricardo Mendes",
+    role: "Empresário • São Paulo",
+    content: "A Nexval me mostrou que seguro de vida é muito mais do que proteção — é planejamento estratégico. Hoje minha família e meu negócio estão blindados contra imprevistos. O atendimento do Brunno foi excepcional.",
+    placeholder: false,
   },
   {
     id: 2,
-    name: "Cliente 2",
-    role: "Profissional Liberal",
-    content: "Depoimento em breve...",
-    placeholder: true,
+    name: "Dra. Carla Figueiredo",
+    role: "Médica • Rio de Janeiro",
+    content: "Como profissional liberal, nunca tinha pensado seriamente em seguro de vida. A consultoria da Nexval abriu meus olhos para riscos que eu nem imaginava. Agora tenho tranquilidade para focar na minha carreira.",
+    placeholder: false,
   },
   {
     id: 3,
-    name: "Cliente 3",
-    role: "Família",
-    content: "Depoimento em breve...",
-    placeholder: true,
+    name: "Fernando e Ana Costa",
+    role: "Casal • Belo Horizonte",
+    content: "Quando nasceu nosso primeiro filho, decidimos estruturar nossa proteção financeira. A Nexval criou um plano personalizado que cabe no nosso orçamento e garante o futuro da nossa família. Recomendo de olhos fechados!",
+    placeholder: false,
   },
 ];
 

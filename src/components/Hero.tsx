@@ -22,7 +22,7 @@ const Hero = () => {
           <img 
             src={logoNexval} 
             alt="Nexval - Corretora de Seguros" 
-            className="h-16 md:h-20 lg:h-24 mb-8 mx-auto animate-fade-in"
+            className="h-28 md:h-36 lg:h-44 mb-8 mx-auto animate-fade-in"
           />
 
           {/* Tag */}
